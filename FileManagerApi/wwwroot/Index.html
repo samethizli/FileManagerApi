@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Dosya Paneli</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+            .top-bar span {
+                font-weight: bold;
+            }
+
+            .top-bar button, button {
+                background-color: #f25022;
+                color: white;
+                border: none;
+                padding: 8px 14px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .top-bar button {
+                background-color: #d00000;
+            }
+
+        button:hover {
+            background-color: #d8411b;
+        }
+
+        .message {
+            display: none;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <span id="username"></span>
+        <button onclick="logout()">Çıkış Yap</button>
+    </div>
+
+    <div id="message" class="message"></div>
+
+    <h3>Dosya Yükle</h3>
+    <input type="file" id="fileInput">
+    <button onclick="upload()">Yükle</button>
+
+    <h3>Dosyalarım</h3>
+    <a href="files.html"><button>Dosyalarımı Listele</button></a>
+
+    <script>
+        const api = "https://localhost:7233/api";
+        const msg = document.getElementById("message");
+
+        window.addEventListener("load", () => {
+            fetch(`${api}/account/user`, { credentials: "include" })
+                .then(res => res.ok ? res.json() : Promise.reject())
+                .then(data => {
+                    document.getElementById("username").textContent = `Merhaba, ${data.username}`;
+                })
+                .catch(() => location.href = "login.html");
+        });
+
+        function showMessage(text, success) {
+            msg.textContent = text;
+            msg.className = "message " + (success ? "success" : "error");
+            msg.style.display = "block";
+            setTimeout(() => msg.style.display = "none", 3000);
+        }
+
+        function upload() {
+            const input = document.getElementById("fileInput");
+            if (!input.files.length) {
+                showMessage("Dosya seçilmedi.", false);
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append("file", input.files[0]);
+
+            fetch(`${api}/file/upload`, {
+                method: "POST",
+                credentials: "include",
+                body: formData
+            })
+                .then(res => res.text())
+                .then(msg => showMessage(msg, true))
+                .catch(() => showMessage("Yükleme başarısız oldu.", false));
+        }
+
+        function logout() {
+            fetch(`${api}/account/logout`, {
+                method: "POST",
+                credentials: "include"
+            }).then(() => location.href = "login.html");
+        }
+    </script>
+</body>
+</html>

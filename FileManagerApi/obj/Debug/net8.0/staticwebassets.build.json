@@ -1,0 +1,434 @@
+{
+  "Version": 1,
+  "Hash": "NjSeEqHYg/dFkaJCUzQwrC+mHpxLbh0SO2oWyHPqKiA=",
+  "Source": "FileManagerApi",
+  "BasePath": "_content/FileManagerApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "FileManagerApi\\wwwroot",
+      "Source": "FileManagerApi",
+      "ContentRoot": "C:\\Users\\samet\\source\\repos\\FileManagerApi\\FileManagerApi\\wwwroot\\",
+      "BasePath": "_content/FileManagerApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\samet\\source\\repos\\FileManagerApi\\FileManagerApi\\wwwroot\\files.html",
+      "SourceId": "FileManagerApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\samet\\source\\repos\\FileManagerApi\\FileManagerApi\\wwwroot\\",
+      "BasePath": "_content/FileManagerApi",
+      "RelativePath": "files#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lqq7za54hr",
+      "Integrity": "48E9VkIWaCrTCAQUs4VeQFKNnHSHRYf0Lu8L+azL/PI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files.html"
+    },
+    {
+      "Identity": "C:\\Users\\samet\\source\\repos\\FileManagerApi\\FileManagerApi\\wwwroot\\Index.html",
+      "SourceId": "FileManagerApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\samet\\source\\repos\\FileManagerApi\\FileManagerApi\\wwwroot\\",
+      "BasePath": "_content/FileManagerApi",
+      "RelativePath": "Index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8ltpbr4evg",
+      "Integrity": "9KZh6aYI8ErEunL0qRjkMbjCNFPcXtdWroicsBCuUgQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Index.html"
+    },
+    {
+      "Identity": "C:\\Users\\samet\\source\\repos\\FileManagerApi\\FileManagerApi\\wwwroot\\login.html",
+      "SourceId": "FileManagerApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\samet\\source\\repos\\FileManagerApi\\FileManagerApi\\wwwroot\\",
+      "BasePath": "_content/FileManagerApi",
+      "RelativePath": "login#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aev22pwcz4",
+      "Integrity": "jq5gpggTiu7t8P4EXLrGbRclJDj4v/ANtjeZDw/zBwI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\login.html"
+    },
+    {
+      "Identity": "C:\\Users\\samet\\source\\repos\\FileManagerApi\\FileManagerApi\\wwwroot\\register.html",
+      "SourceId": "FileManagerApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\samet\\source\\repos\\FileManagerApi\\FileManagerApi\\wwwroot\\",
+      "BasePath": "_content/FileManagerApi",
+      "RelativePath": "register#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rpqbnkuo3p",
+      "Integrity": "/4JLCuG1a0s0WBudPz2yqfaYtfdbzCCbbYrfVaqxMLk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\register.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "files.html",
+      "AssetFile": "C:\\Users\\samet\\source\\repos\\FileManagerApi\\FileManagerApi\\wwwroot\\files.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3989"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"48E9VkIWaCrTCAQUs4VeQFKNnHSHRYf0Lu8L+azL/PI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 22:54:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-48E9VkIWaCrTCAQUs4VeQFKNnHSHRYf0Lu8L+azL/PI="
+        }
+      ]
+    },
+    {
+      "Route": "files.lqq7za54hr.html",
+      "AssetFile": "C:\\Users\\samet\\source\\repos\\FileManagerApi\\FileManagerApi\\wwwroot\\files.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3989"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"48E9VkIWaCrTCAQUs4VeQFKNnHSHRYf0Lu8L+azL/PI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 22:54:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lqq7za54hr"
+        },
+        {
+          "Name": "label",
+          "Value": "files.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-48E9VkIWaCrTCAQUs4VeQFKNnHSHRYf0Lu8L+azL/PI="
+        }
+      ]
+    },
+    {
+      "Route": "Index.8ltpbr4evg.html",
+      "AssetFile": "C:\\Users\\samet\\source\\repos\\FileManagerApi\\FileManagerApi\\wwwroot\\Index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3558"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9KZh6aYI8ErEunL0qRjkMbjCNFPcXtdWroicsBCuUgQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 22:48:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8ltpbr4evg"
+        },
+        {
+          "Name": "label",
+          "Value": "Index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9KZh6aYI8ErEunL0qRjkMbjCNFPcXtdWroicsBCuUgQ="
+        }
+      ]
+    },
+    {
+      "Route": "Index.html",
+      "AssetFile": "C:\\Users\\samet\\source\\repos\\FileManagerApi\\FileManagerApi\\wwwroot\\Index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3558"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9KZh6aYI8ErEunL0qRjkMbjCNFPcXtdWroicsBCuUgQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 22:48:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9KZh6aYI8ErEunL0qRjkMbjCNFPcXtdWroicsBCuUgQ="
+        }
+      ]
+    },
+    {
+      "Route": "login.aev22pwcz4.html",
+      "AssetFile": "C:\\Users\\samet\\source\\repos\\FileManagerApi\\FileManagerApi\\wwwroot\\login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4317"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jq5gpggTiu7t8P4EXLrGbRclJDj4v/ANtjeZDw/zBwI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 22:44:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aev22pwcz4"
+        },
+        {
+          "Name": "label",
+          "Value": "login.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jq5gpggTiu7t8P4EXLrGbRclJDj4v/ANtjeZDw/zBwI="
+        }
+      ]
+    },
+    {
+      "Route": "login.html",
+      "AssetFile": "C:\\Users\\samet\\source\\repos\\FileManagerApi\\FileManagerApi\\wwwroot\\login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4317"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jq5gpggTiu7t8P4EXLrGbRclJDj4v/ANtjeZDw/zBwI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 22:44:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jq5gpggTiu7t8P4EXLrGbRclJDj4v/ANtjeZDw/zBwI="
+        }
+      ]
+    },
+    {
+      "Route": "register.html",
+      "AssetFile": "C:\\Users\\samet\\source\\repos\\FileManagerApi\\FileManagerApi\\wwwroot\\register.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4266"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/4JLCuG1a0s0WBudPz2yqfaYtfdbzCCbbYrfVaqxMLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 22:44:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/4JLCuG1a0s0WBudPz2yqfaYtfdbzCCbbYrfVaqxMLk="
+        }
+      ]
+    },
+    {
+      "Route": "register.rpqbnkuo3p.html",
+      "AssetFile": "C:\\Users\\samet\\source\\repos\\FileManagerApi\\FileManagerApi\\wwwroot\\register.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4266"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/4JLCuG1a0s0WBudPz2yqfaYtfdbzCCbbYrfVaqxMLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 22:44:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rpqbnkuo3p"
+        },
+        {
+          "Name": "label",
+          "Value": "register.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/4JLCuG1a0s0WBudPz2yqfaYtfdbzCCbbYrfVaqxMLk="
+        }
+      ]
+    }
+  ]
+}

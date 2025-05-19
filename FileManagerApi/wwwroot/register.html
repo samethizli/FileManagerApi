@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kayıt Ol</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f25022, #7fdbda);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #fff;
+            width: 320px;
+            padding: 40px 30px 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            position: relative;
+            text-align: center;
+        }
+
+            .card::before {
+                content: "";
+                position: absolute;
+                top: -40px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: #1f2e42;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background-image: url('https://cdn-icons-png.flaticon.com/512/747/747545.png');
+                background-size: 50%;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+        h2 {
+            margin-top: 50px;
+            margin-bottom: 25px;
+            color: #1f2e42;
+            font-size: 22px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #f25022;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+            button:hover {
+                background-color: #d8411b;
+            }
+
+        .info {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 14px;
+            display: none;
+        }
+
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Kayıt Ol</h2>
+        <input id="regUser" placeholder="Kullanıcı Adı">
+        <input id="regPass" type="password" placeholder="Şifre">
+        <button onclick="register()">Kayıt Ol</button>
+        <div id="infoBox" class="info"></div>
+    </div>
+
+    <script>
+        const api = "https://localhost:7233/api";
+        const infoBox = document.getElementById("infoBox");
+
+        function register() {
+            const username = document.getElementById("regUser").value;
+            const password = document.getElementById("regPass").value;
+
+            fetch(`${api}/account/register`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ username, password })
+            }).then(r => {
+                if (r.ok) {
+                    infoBox.textContent = "Kayıt başarılı. Giriş sayfasına yönlendiriliyorsunuz...";
+                    infoBox.className = "info success";
+                    infoBox.style.display = "block";
+                    setTimeout(() => window.location.href = "login.html", 1000);
+                } else {
+                    r.text().then(t => {
+                        infoBox.textContent = t;
+                        infoBox.className = "info error";
+                        infoBox.style.display = "block";
+                    });
+                }
+            }).catch(() => {
+                infoBox.textContent = "Bağlantı sırasında bir hata oluştu.";
+                infoBox.className = "info error";
+                infoBox.style.display = "block";
+            });
+        }
+    </script>
+</body>
+</html>
